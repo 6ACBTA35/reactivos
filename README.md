@@ -28,7 +28,6 @@ Los estudiantes que participan en este proyecto son:
 
  - Ivan Ramos Hernández
  - Eduardo Reyes Moreno
- - Quetzaly Betzabet Rodriguez
  - Angel Aaron Trujillo Santes
  - Luz Maria Avendano Martinez
  - Neftali Mendoza Mena
