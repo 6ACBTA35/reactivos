@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum-scale=1.0">
+	<title>Transformaciones scale</title>
+	<style>
+		body,
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		#imagen{
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			margin-top: 100px;
+			display: block;
+			transition: all .3s	ease-in-out;
+		}
+		#imagen:hover{
+			-webkit-transform: scaleY(1.5);
+			-moz-transform: scaleY(1.5);
+			-ms-transform: scaleY(1.5);
+			transform: scaleY(1.5);
+			transform-origin: left bottom;
+		}
+		/*
+			=== transform: scale(X, Y) ===
+						->En ambos sentidos un solo valor
+			=== transform: scaleX(x) ===
+			=== transform: scaleY(y) ===
+
+			VALORES NUMERICOS
+
+			=== transform-origin: x y ===
+			Palabras clave -> rigth, left, top, bottom, center
+		    Unidades de medida -> px, em, rem...etc
+	</style>
+</head>
+<body>
+	<img src="./img/css3.png" alt="" id="imagen">
+</body>
+</html>
