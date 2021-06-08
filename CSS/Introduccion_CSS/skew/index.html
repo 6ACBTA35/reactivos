@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum-scale=1.0">
+	<title>Transformaciones skew</title>
+	<style>
+		body,
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		#imagen{
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			margin-top: 100px;
+			display: block;
+			transition: all .3s	ease-in-out;
+		}
+		#imagen:hover{
+			-webkit-transform: skewY(15deg);
+			-moz-transform: skewY(15deg);
+			-ms-transform: skewY(15deg);
+			transform: skewY(15deg);
+			transform: skewY(15deg);
+		}
+		/*
+			=== transform: skew(X, Y) ===
+			=== transform: skewX(x) ===
+			=== transform: skewY(y) ===
+
+			deg -> grados
+
+			Si se utiiza la transformacion en un angulo de 90 grados no se vera el elemento
+
+			=== transform-origin: x y ===
+			Palabras clave -> rigth, left, top, bottom, center
+		    Unidades de medida -> px, em, rem...etc
+	</style>
+</head>
+<body>
+	<img src="./img/css3.png" alt="" id="imagen">
+</body>
+</html>
