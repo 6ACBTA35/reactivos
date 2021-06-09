@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum-scale=1.0">
+	<title>Pseudo clase nth-child</title>
+	<style>
+		body,
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		/*
+				selector:nth-child()
+				seletor:nth-last-child()
+
+				== Valores ==
+				even -> pares
+				odd -> nones (impares)
+				an+b -> Podemos definir un número n cantidad de veces
+	    */
+	    table tbody tr:nth-child(-n+3){
+	    	background-color: blue;
+	    	color: #fff;
+	    }
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Marca</th>
+				<th>Procesador</th>
+				<th>HDD</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Apple</td>
+				<td>Core i7</td>
+				<td>500GB</td>
+			</tr>
+			<tr>
+				<td>Hp</td>
+				<td>Core i5</td>
+				<td>1TB</td>
+			</tr>
+			<tr>
+				<td>Sony</td>
+				<td>Core i5</td>
+				<td>2TB</td>
+			</tr>
+			<tr>
+				<td>Toshiba</td>
+				<td>Core i7</td>
+				<td>2TB</td>
+			</tr>
+			<tr>
+				<td>Samsung</td>
+				<td>Core i5</td>
+				<td>500GB</td>
+			</tr>
+			<tr>
+				<td>Lenovo</td>
+				<td>Core i5</td>
+				<td>1TB</td>
+			</tr>
+			<tr>
+				<td>Apple</td>
+				<td>Core i7</td>
+				<td>500GB</td>
+			</tr>
+			<tr>
+				<td>Hp</td>
+				<td>Core i5</td>
+				<td>1TB</td>
+			</tr>
+			<tr>
+				<td>Sony</td>
+				<td>Core i5</td>
+				<td>2TB</td>
+			</tr>
+			<tr>
+				<td>Toshiba</td>
+				<td>Core i7</td>
+				<td>2TB</td>
+			</tr>
+			<tr>
+				<td>Samsung</td>
+				<td>Core i5</td>
+				<td>500GB</td>
+			</tr>
+			<tr>
+				<td>Lenovo</td>
+				<td>Core i5</td>
+				<td>1TB</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
