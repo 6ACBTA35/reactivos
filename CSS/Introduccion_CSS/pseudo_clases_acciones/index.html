@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum-scale=1.0">
+	<title>Pseudo clases de accines de usuario</title>
+	<style>
+		body,
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		.caja{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			margin: 0 auto;
+		}
+		form{
+			margin: 0 auto;
+			width: 400px;
+			padding: 15px;
+			margin-top: 27px;
+		}
+		form input{
+			width: 100%;
+			display: block;
+			margin: 10px 0;
+		}
+		form button{
+			display: block;
+			width: 100%;
+			background-color: green;
+			color: #fff;
+		}
+		/*
+			=== selector:hover ===
+			=== selector:active ===
+			=== selector:focus ===
+		*/
+		.caja:hover{
+			background-color: darkred;
+		}
+		button:active{
+			background-color: blue;
+		}
+		input:focus{
+			border: 2px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="caja"></div>
+	<form action="">
+		<input type="text" name="nombre">
+		<input type="text" name="apellido">
+		<button>Enviar</button>
+	</form>
+</body>
+</html>
