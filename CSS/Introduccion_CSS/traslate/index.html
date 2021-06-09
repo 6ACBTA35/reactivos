@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum-scale=1.0">
+	<title>Transformaciones traslate</title>
+	<style>
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		#imagen{
+			width: 300px;
+			height: 300px;
+			margin: 0 auto;
+			margin-top: 100px;
+			display: block;
+			transition: all .3s ease-in-out;
+		}
+		#imagen:hover{
+			-webkit-transform: translateY(-45px);
+			-moz-transform: translateY(-45px);
+			-ms-transform: translateY(-45px);
+			transform: translateY(-45px);
+			transform-origin: 45px 100px;
+		}
+		/*
+			=== transform: translate(X, Y) ===
+			=== transform: translateX() ===
+			=== transform: translateY() ===
+			=== transform: translateZ() ===
+			UNIDADES DE MEDIDA= px, em, rem, %, pc, pt...etc
+			Palabras clave -> rigth, left, top, bottom, center
+		    Unidades de medida -> px, em, rem...etc
+	</style>
+</head>
+<body>
+
+</body>
+</html>
