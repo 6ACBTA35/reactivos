@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=1.0, minimum-scale=1.0">
+    <title>Pseudo clases valadicón</title>
+    <style>
+        body,
+        html{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        form{
+            margin: 0 auto;
+            width: 90%;
+            max-width: 300px;
+            margin-top: 30px;
+
+        }
+
+        /*
+                == selector:required ==
+                Cuando el input es requerido
+
+                == selector:valid ==
+                Cuando el formato del input es válido
+
+                == selector:invalid ==
+                Cuando el formato del input es invalido
+                
+        */
+
+        .input-form{
+            display: block;
+            width: 100%;
+            margin: 3px auto;
+        }
+        input:required{
+            background-color: red;
+        }
+        input:valid{
+            background-color: blue;
+        }
+        input:invalid{
+            background-color: darkred;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input class="input-form" type="num" placeholder="Cédula, DNI, DUI" required="" pattern="[0-9]{7,9}" maxlength="9">
+        <input class="input-form" pattern="[a-zA-Z$() ]{5,7}" maxlength="7" required="" type="text" placeholder="Nombre">
+        <input class="input-form" type="text" placeholder="Apellido">
+        <input class="input-form" type="email" placeholder="E-mail">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
