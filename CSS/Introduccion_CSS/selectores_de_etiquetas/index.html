@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Selectores de etiquetas</title>
+	<style>
+		div{
+			background-color: red;
+			height: 20px;
+			width: 100%;
+		}
+		header{
+			background-color: blue;
+			height: 20px;
+			width: 100%;
+			padding: 10px 0;
+		}
+		header > div{
+			background-color: black;
+			height: 20px;
+			width: 100%;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<header>
+		<div>Hijo directo</div>
+		<span>
+			<div></div>
+		</span>
+	</header>
+</body>
+</html>
