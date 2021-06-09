@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>Pseudo elementos</title>
+	<style>
+		body,
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative
+
+			.parrafo{
+				font-size:27px;
+			}
+			.parrafo::first-line{
+				color:red;
+				font-size: 19px;
+			}
+			.parrafo::first-line{
+				color:blue;
+				font-size: 50px;
+			}
+			.parrafo::before{
+				content: "Antes";
+				border: 2px solid #000;
+			}
+			.parrafo::after{
+				content: "Despues";
+			}
+			.parrafo::first-line{
+				color:yellow;
+				background-color:#000; 
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<p class="parrafo">
+			Lorem ipsum dolor sit amet,consectetur adipisicing elit.Rerum quis, soluto amet.Fuga assumenda omnis facilis pariatur,suscipit quia
+		</p>
+	</body>
+	</html>
