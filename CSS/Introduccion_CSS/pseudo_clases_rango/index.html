@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>Pseudo clases segun rango</title>
+	<style>
+		body,
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+		input[type="number"]{
+			margin: 0 auto;
+			margin-top:20px;
+			display: block;
+		}
+		input[type="number"]:in-range{
+			background-color: blue;
+			color:#fff; 
+		}
+		input[type="number"]:out-of-range{
+			background-color: red;
+			color:#fff; 
+		}
+	</style>
+</head>
+<body>
+	<input type="number" min"7" max="10">
+</body>
+</html>
+

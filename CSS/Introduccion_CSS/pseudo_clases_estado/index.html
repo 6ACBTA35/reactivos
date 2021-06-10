@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<title>Pseudo clases segun estado de componentes</title>
+	<style>
+		body,
+		html{
+			height: 100%;
+			width: 100%;
+			position: relative;
+		}
+
+			input[type="text"]:enabled{
+				color:green;
+
+			}
+			input[type="text"]:disabled{
+				height: 10px;
+				
+			}
+			input[type="checkbox"]:checked + label{
+				color:green;
+				font-size: 10px;
+				
+			}
+		</style>
+	</head>
+		<body>
+			<input type="text" placeholder="Nombre">
+			<input type="text" placeholder="Apellido"disabled="">
+			<input type="checkbox" class="opcion">
+			<label for="opcion">Seleccioname</label> 
+		</body>
+	</html>
