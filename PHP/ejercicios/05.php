@@ -2,7 +2,7 @@
 <html >
  <head>
         <meta charset="UTF-8">
-         <title>Modelo de caja (box-sizing)</title>
+         <title>Aprendiendo PHP</title>
           </head>
      <body>
 
