@@ -32,12 +32,12 @@
         	     echo "<hr>";
         	     $numero1 = 10;
         	     if($numero1 % 2 == 0){
-        	     echo el numero es par";
+        	     echo "el numero es par";
         	     }else {
         	      echo "El numero es impar";
         	     }
         	   
-        	   ?>
+        	     ?>
 
             </div>
        </div>
