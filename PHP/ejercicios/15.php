@@ -17,6 +17,7 @@
 			<ul>
 				<?php foreach($tecnologia as $tecnologia):?>
 					<li><?php echo $tecnologia ?></li>
+				<?php endforeach; ?>
 			</ul>
 			<?php
 			$persona = array(
